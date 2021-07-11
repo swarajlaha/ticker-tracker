@@ -57,7 +57,7 @@ const HomePage = (mode) => {
     try {
       axios
         .get(
-          `${process.env.REACT_APP_BASEURL}?tickers=${tickerName}&time_period=1mo`,
+          `${process.env.REACT_APP_BASEURL}?tickers=${tickerName}&time_period=30d`,
           { headers: config },
         )
         .then((res) => {
